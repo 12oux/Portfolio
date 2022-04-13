@@ -1,18 +1,18 @@
 const express = require('express');
 let session = require('express-session');
-
+var path = require("path");
+const port = 3000;
 
 const app = express();
 app.set("port", process.env.PORT || 3000);
-var path = require("path");
 
 app.set("views", path.join(__dirname, "/src/views"));
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: false }));
 
-server.listen(process.env.PORT)
+// server.listen("port", process.env.PORT || 3000);
 
 const route = require("./src/routes/site");
 
