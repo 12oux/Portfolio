@@ -3,7 +3,7 @@ let session = require('express-session');
 
 
 const app = express();
-const port = 3000;
+app.set("port", process.env.PORT || 3000);
 var path = require("path");
 
 app.set("views", path.join(__dirname, "/src/views"));

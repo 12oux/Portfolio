@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ac791d6d-3707-435d-8b7d-63c655fd1d19/resourceGroups/benoitrobichaud_group/providers/Microsoft.Web/sites/benoitrobichaud",
+    "appService.deploySubpath": "."
+}
