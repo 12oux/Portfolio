@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.json());
 app.use(express.urlencoded());
 
+server.listen(process.env.PORT)
 
 const route = require("./src/routes/site");
 
