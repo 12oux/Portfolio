@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: false }));
 
 const route = require("./src/routes/site");
 
-
-app.use(route);
+var indexRouter = require('./routes/index');
+app.use('/', indexRouter);
 
 app.listen(port, () => {
     console.log('portfolio listening at http://localhost:${port}');
