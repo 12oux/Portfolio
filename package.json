@@ -7,6 +7,10 @@
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12oux/Portfolio.git"
+  },
   "author": "Benoit Robichaud",
   "license": "ISC",
   "dependencies": {
