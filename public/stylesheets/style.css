@@ -20,3 +20,7 @@
 #photo {
     text-align-last: auto;
 }
+
+#contact {
+    border: 0;
+}
