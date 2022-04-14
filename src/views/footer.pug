@@ -1,7 +1,7 @@
 #footer.mt-auto
   .container-fluid
-    .row.bg-dark.py-2
-      .d-none.d-md-block.col-4.text-center
+    .row.bg-dark
+      .d-none.d-md-block.col-4.m-auto.text-center
         p.text-white= "Suivez-moi sur les réseaux sociaux!"
         a(href="https://www.facebook.com/brobichaud12") 
           i.fab.fa-facebook.fa-2x.mx-2.text-light
@@ -12,15 +12,17 @@
         a(href="https://discordapp.com/users/Roux#6839/") 
           i.fab.fa-brands.fa-discord.fa-2x.mx-2.text-light
       .container.col-md-6.col-lg-4.bg-dark.d-block.text-center.border-none
-        i.fas.fa.fa-globe.text-light
-         | &emsp; Région de Montréal
-        br
-        i.fas.fa-solid.fa-phone.text-light
-          |&emsp; 438-869-7689
-        br
-        i.fas.fa.fa-envelope.text-light
-          |&emsp; b.robichaud12@gmail.com    
-      .col-lg-4.mb-4.text-right
+        ul(id="list")
+          li
+            i.fas.fa.fa-globe.text-light
+              p(id="texte1") Région de Montréal
+          li
+            i.fas.fa-solid.fa-phone.text-light
+              p(id="texte1") 438-869-7689
+          li 
+            i.fas.fa.fa-envelope.text-light
+              p(id="texte1") b.robichaud12@gmail.com    
+      .col-lg-4.mb-4.text-right.m-auto
         a.d-none.d-lg-block(href="https://www.twitch.tv/thegingerizer")
           img(src="/images/logo.png", alt="logo" width="20%" height="20%")
       .d-md-none.d-sm-block.m-auto.text-center
